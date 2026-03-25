@@ -115,8 +115,7 @@ mvn clean install -DskipTests
 
 ## 📌 Notes
 
-Originally based on a training course, this project was refactored and extended to demonstrate real-world backend and cloud engineering practices.
-
+This project demonstrates a microservices-based architecture built with Spring Boot and deployed in AWS using containerized environments and Kubernetes.
 ---
 
 ## 👨‍💻 Author

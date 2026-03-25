@@ -93,9 +93,9 @@ mvn clean install -DskipTests
 ---
 
 ## 📡 Example Endpoints
-GET /api/usuarios
-POST /api/auth/login
-GET /api/cursos
+* GET /api/usuarios
+* POST /api/auth/login
+* GET /api/cursos
 
 ---
 

@@ -1,5 +1,11 @@
 # 🚀 Microservices Platform with Spring Boot, Docker, Kubernetes & AWS
 
+## 🧱 Architecture Diagram
+
+![Architecture](architecture-diagram.png)
+
+---
+
 ## 📌 Overview
 
 This project implements a microservices-based architecture using **Spring Boot** and **Spring Cloud**, designed for cloud-native environments.
@@ -43,29 +49,25 @@ Run locally with Docker:
 
 ```bash
 docker-compose up --build
-```
 
 ---
-
 ## ☸️ Kubernetes
 
 Deploy using:
-
-```bash
 kubectl apply -f .
-```
+
+---
 
 Includes:
 
-* Deployments
-* Services
-* ConfigMaps
-* Persistent Volumes (MySQL/Postgres)
+Deployments
+Services
+ConfigMaps
+Persistent Volumes (MySQL/Postgres)
 
 ---
 
 ## 🔐 Security
-
 * OAuth2 authentication implemented
 * Spring Security for endpoint protection
 * Secure inter-service communication
@@ -73,7 +75,6 @@ Includes:
 ---
 
 ## ⚙️ Tech Stack
-
 * Java 17
 * Spring Boot
 * Spring Cloud
@@ -87,23 +88,17 @@ Includes:
 ---
 
 ## 🚀 Build
-
-```bash
 mvn clean install -DskipTests
-```
-
 ---
 
 ## 📡 Example Endpoints
-
-* `GET /api/usuarios`
-* `POST /api/auth/login`
-* `GET /api/cursos`
+GET /api/usuarios
+POST /api/auth/login
+GET /api/cursos
 
 ---
 
 ## 🧠 Key Concepts
-
 * Microservices architecture
 * API Gateway pattern
 * Service-to-service communication (Feign)
@@ -112,12 +107,6 @@ mvn clean install -DskipTests
 * Cloud deployment (AWS ECS & EKS)
 
 ---
+👨‍💻 Author
 
-## 📌 Notes
-
-This project demonstrates a microservices-based architecture built with Spring Boot and deployed in AWS using containerized environments and Kubernetes.
----
-
-## 👨‍💻 Author
-
-Developed and adapted by **Freyder**
+Developed by Freyder

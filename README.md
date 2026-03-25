@@ -49,13 +49,14 @@ Run locally with Docker:
 
 ```bash
 docker-compose up --build
-
+```
 ---
 ## ☸️ Kubernetes
 
 Deploy using:
+```bash
 kubectl apply -f .
-
+```
 ---
 
 Includes:

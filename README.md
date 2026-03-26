@@ -89,7 +89,9 @@ Persistent Volumes (MySQL/Postgres)
 ---
 
 ## 🚀 Build
+```bash
 mvn clean install -DskipTests
+```
 ---
 
 ## 📡 Example Endpoints

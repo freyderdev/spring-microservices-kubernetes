@@ -21,7 +21,16 @@ The system is deployable both locally and in AWS using **ECS (container-based)**
 
 ![Architecture Diagram](./docs/architecture.png)
 
+### 🔄 Request Flow
+
+1. Client sends request to API Gateway
+2. Gateway routes request to appropriate microservice
+3. Authentication handled via OAuth2 (JWT)
+4. Service communicates with other services via Feign (if needed)
+5. Each service interacts with its own database
+6. Response is returned through the Gateway
 ---
+
 
 ### Services
 
@@ -83,6 +92,22 @@ Includes:
 * Database containers (MySQL, PostgreSQL)
 
 ---
+## ▶️ Running Locally
+
+1. Build all services:
+   ```bash
+   mvn clean install
+   ```
+2. Start the infrastructure:
+```bash
+   docker-compose up --build
+   ```
+3. Access via API Gateway:
+```bash
+   http://localhost:<port>
+   ```
+
+---
 
 ## ☸️ Kubernetes Orchestration
 
@@ -137,6 +162,14 @@ kubectl apply -f .
 * `GET /api/cursos`
 
 ---
+## 🧩 Architecture Highlights
+
+- Decoupled microservices with independent databases
+- Centralized authentication using OAuth2 (JWT)
+- API Gateway for routing and security
+- Containerized services for environment consistency
+- Kubernetes orchestration for scalability and resilience
+
 
 ## 🧠 Key Engineering Concepts
 

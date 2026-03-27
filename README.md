@@ -17,6 +17,11 @@ The system is deployable both locally and in AWS using **ECS (container-based)**
 ---
 
 ## 🧱 Architecture
+### 📊 Architecture Diagram
+
+![Architecture Diagram](./docs/architecture.png)
+
+---
 
 ### Services
 
